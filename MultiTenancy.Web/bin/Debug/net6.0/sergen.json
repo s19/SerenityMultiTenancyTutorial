@@ -1,0 +1,28 @@
+{
+  "RootNamespace": "MultiTenancy",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.Tenant",
+          "Identifier": "Tenant",
+          "Module": "Administration",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "6.0.3.0"
+  }
+}
